@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORMS</title>
+  </head>
+  <body>
+    <h1>Sign up</h1>
+    <form action="#" method="#">
+      <!-- shortcut input:text#username -->
+      <!-- id and labelfor should be same  -->
+      <!-- required means the content should be filled in -->
+      <label for="username">Username</label>
+      <input
+        type="text"
+        name="usernamae"
+        id="username"
+        placeholder="use only alphanumeric charcters"
+      />
+      <br /><br />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required />
+      <br /><br />
+
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" min="18" max="65" />
+      <br /><br />
+
+      <label for="birthday">Birthday</label>
+      <input type="date" name="birthhday" id="birthday" />
+      <br /><br />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="mail@mail.com" />
+      <br /><br />
+
+      <label for="bio">Bio / Description</label>
+      <br /><br />
+      <textarea name="bio" id="bio" cols="50" rows="10"></textarea>
+      <br /><br />
+
+      <p>Choose your genre of music:</p>
+      <input type="radio" name="music" id="rock" value="rock" />
+      <label for="rock">Rock</label>
+      <input type="radio" name="music" id="pop" value="pop" />
+      <label for="pop">Pop</label>
+      <input type="radio" name="music" id="jazz" value="jazz" />
+      <label for="jazz">Jazz</label>
+      <br /><br />
+
+      <p>Please select your favorite food:</p>
+      <input type="checkbox" name="food" id="sushi" />
+      <label for="sushi">Sushi</label>
+      <input type="checkbox" name="food" id="curry" />
+      <label for="curry">Curry</label>
+      <input type="checkbox" name="food" id="takoyaki" value="takoyaki" />
+      <label for="takoyaki">Takoyaki</label>
+      <br /><br />
+
+      <label for="device">Select your device</label>
+      <select name="device" id="device">
+        <option selected disabled>Select your device</option>
+        <option value="mobile">Mobile Device</option>
+        <option value="tablet">Mobile Tablet</option>
+        <option value="laptop">Laptop Computer</option>
+        <option value="desktop">Desktop Computer</option>
+      </select>
+      <br /><br />
+
+      <label for="car">Select a car:</label>
+      <select name="car" id="car" multiple>
+        <option value="honda">Honda</option>
+        <option value="toyota">Toyota</option>
+        <option value="nissan">Nissan</option>
+      </select>
+      <br /><br />
+
+      <label for="photo">Upload Profile Photo:</label>
+      <input type="file" name="photo" id="photo" />
+      <br /><br />
+
+      <!-- Submit button -->
+      <input type="submit" value="Submit" name="btn_submit" />
+      <!-- <button type="submit" name="submit_btn">Submit Button</button> -->
+
+      <!--Clears the form  -->
+      <input type="reset" value="Clear Form" name="btn_reset" />
+    </form>
+  </body>
+</html>

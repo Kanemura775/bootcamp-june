@@ -1,0 +1,23 @@
+/* External css */
+
+/* element selector */
+h2{
+    color:blue;
+}
+
+/* Universal selecter (select all elements)*/
+*{
+    border: 1px dotted gray;
+}
+
+/* Class selector */
+.text-center{
+    text-align:center;
+}
+
+/* Id selector */
+#heading-2{
+    text-align:center;
+    background-color:green;
+    color:white;
+}
